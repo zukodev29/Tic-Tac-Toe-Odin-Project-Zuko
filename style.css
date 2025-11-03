@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+/*Font that is used in thi exercise*/
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+/*Basic body code*/
+body{
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 1440px;
+    height: auto;
+    background-color:rgb(220, 222, 220);
+}
+/*Header code*/
+.header-text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 300px;
+   margin-top: 80px;
+   color: rgb(2, 176, 250);
+   font-size: 2.5rem;
+   font-weight: 900;
+}
+/*Header text hover effect*/
+.header-text:hover{
+   color: rgb(5, 229, 245);
+   transition: 0.3;
+   cursor: pointer;
+}
+/*Player class positioning*/
+.players{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 300px;
+   margin-top: 35px;
+}
+/*First player code*/
+.first-player h3{
+  color: rgb(247, 120, 0);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+/*First player hover effect*/
+.first-player h3:hover{
+    color: rgb(247, 170, 54);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/*Second player code*/
+.second-player h3{
+    margin-left: 30px;
+    color: rgb(247, 0, 0);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+/*Second player hover effect*/
+.second-player h3:hover{
+    color: rgb(255, 64, 64);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/*Positioning inputs code*/
+.first-player input, .second-player input{
+   margin-top: 10px;
+}
+.first-player input{
+    margin-left: 15px;
+}
+.first-player input:focus{ outline:none; rgb(247, 120, 0);}
+.second-player input{
+    margin-left: 65px;
+}
+.second-player input:focus{ outline:none; rgb(247, 0, 0);}
+/*Positioning inputs code*/
+/*Styling input for player 1*/
+#player1{
+   height: 35px;
+   border: solid 3px rgb(247, 120, 0);
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+}
+/*Styling input for player 2*/
+#player2{
+   height: 35px;
+   border: solid 3px rgb(247, 0, 0);
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+}
+/**Gameboard and board code*/
+.gameboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -190px;
+}
+.board{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  margin-top: 60px;
+  margin-left: 480px;
+  grid-template-rows: repeat(3,100px);
+  border: solid, 2px, black;
+  width: 600px;
+  height: 300px;
+  
+}
+/*Game info and restart button positioning*/
+.game-info, .restart-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+/*Code for cells*/
+ #first-cell{
+    border: solid 2px black;
+    background-color: white;
+ }
+ #second-cell{
+    border: solid 2px black;
+    background-color: white;
+ }
+ #third-cell{
+    border: solid 2px black;
+    background-color: white;
+ }
+ #fourth-cell{
+    border: solid 2px black;
+    background-color: white;
+ }
+ #fifth-cell{
+    border: solid 2px black;
+    background-color: white;
+ }
+#sixth-cell{
+    border: solid 2px black;
+    background-color: white;
+  }
+#seventh-cell{
+     border: solid 2px black;
+      background-color: white;
+    }
+#eighth-cell{
+     border: solid 2px black;
+     background-color: white;
+    }
+#ninth-cell{
+      border: solid 2px black;
+      background-color: white;
+    }
+/*Code for cells*/
+/*Restart button code*/
+.restart-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: rgb(247, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: solid 3px rgb(247, 0, 0);
+    cursor: pointer;
+    
+}
+/*Start button code*/
+.start-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 750px;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 1.3rem;
+    background-color:rgb(0, 150, 255);
+    color:rgb(255,165,0);
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 3px rgb(255,165,0);
+}
+/*Game info code*/
+.game-info{
+    font-weight: 900;
+}
+/*Turn info code*/
+.turn-info{
+    margin-right: -120px;
+}
+/*X and O font weight*/
+.board .x {
+  font-weight: 900;
+}
+.board .o {
+  font-weight: 900;
+}
+/*Board cells and hover effect*/
+.board .cell,
+.board > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 120px;
+}
+.board .cell,
+.board > div:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
